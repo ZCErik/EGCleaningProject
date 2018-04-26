@@ -49,13 +49,26 @@ CREATE TABLE Category (
 ;
 
 -- -----------------------------------------------------
+-- Table Units E.G.
+-- -----------------------------------------------------
+CREATE TABLE Units (
+  UnitId        VARCHAR(3)      NOT NULL,
+  UnitDesc       VARCHAR(20)     NOT NULL,
+  UnitPrice      DECIMAL(5,2)    NOT NULL,
+  
+  PRIMARY KEY (UnitId)
+
+)
+;
+
+-- -----------------------------------------------------
 -- Table Services E.G.
 -- -----------------------------------------------------
 CREATE TABLE Services (
   ServId            INT             NOT NULL,
   ServDesc          VARCHAR(60)     NOT NULL,
   Price             DECIMAL(6,2)    NOT NULL,
-  Category          INT             NOT NULL,
+  Category          VARCHAR(3)      NOT NULL,
   
   PRIMARY KEY (ServId),
 

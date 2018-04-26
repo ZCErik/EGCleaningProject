@@ -61,13 +61,14 @@ INSERT INTO ZipCode VALUES
 
 
 -- -----------------------------------------------------
--- Table Service - E.G.
+-- Table Services - E.G.
 -- -----------------------------------------------------
 INSERT INTO Services (ServDesc, Price, Category) VALUES
-('Apartment 1 Room - 1 Bathroom - 1 Living Room', 60, 'RC'),
-('Airbnb Basic Cleaning', 60, 'RC'),
-('', 20),
-('LD','Laundry', 20),
+('Apartment/house 1 Room - 1 Bathroom - 1 Living Room', 60, 'HC'),
+('Apartment/house 2 Rooms - 1 Bathroom - 1 Living Room', 90),
+('Airbnb Basic Cleaning', 60, 'HC'),
+('House 3 Rooms - 2.5 Bathrooms - 2 Living Rooms', 120, 'HC'),
+('House 3 Rooms - 2 Bathrooms - 1 Living Room', 120),
 ('CC','Comercial Cleaning', 25),
 ('CD', 'Comercial Deep Cleaning', 35)
 ;
@@ -76,12 +77,26 @@ INSERT INTO Services (ServDesc, Price, Category) VALUES
 -- Insert into Category - E.G.
 -- -----------------------------------------------------
 INSERT INTO Category (CategoryId, CategoryDesc) VALUES
-('RC', 'Regular Cleaning'),
+('HC', 'House Cleaning'),
 ('DC', 'Deep Cleaning'),
 ('IR', 'Ironing'),
 ('LD', 'Laundry'),
 ('CC', 'Comercial Cleaning'),
 ('CD', 'Comercial Deep Cleaning')
+;
+
+-- -----------------------------------------------------
+-- Insert into Units - E.G.
+-- -----------------------------------------------------
+INSERT INTO Units (UnitDesc, UnitPrice) VALUES
+('Full Bathroom', 15.00, 45.00),
+('Half Bathroom', 10.00, 20.00),
+('Living Room', 20.00, 30.00),
+('Bedroom', 20.00, 30.00),
+('Kitchen', 15.00, 45.00),
+('Vaccuum/Mop', 20.00, 30.00)
+('Small Business Area', 75.00)
+('Media Size Business Area', 100.00)
 ;
 
 -- -----------------------------------------------------
